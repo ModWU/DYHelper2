@@ -1,0 +1,241 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    
+    <style name="login_style" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/slide_style</item>
+    </style>
+    <style name="slide_style" parent="@style/Base.Theme.AppCompat.Light">
+        <item name="android:windowAnimationStyle">@style/slide_style_sub</item>
+    </style>
+    <style name="slide_style_sub" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/hongbao_setting_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/hongbao_setting_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/hongbao_setting_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/hongbao_setting_close_exit</item>
+    </style>
+    <style name="SwitchButtonMD">
+        <item name="kswThumbDrawable">@drawable/ksw_md_thumb</item>
+        <item name="kswThumbMarginTop">-14.0dip</item>
+        <item name="kswThumbMarginBottom">-14.0dip</item>
+        <item name="kswThumbMarginLeft">-16.0dip</item>
+        <item name="kswThumbMarginRight">-16.0dip</item>
+        <item name="kswThumbWidth">@dimen/ksw_md_thumb_ripple_size</item>
+        <item name="kswThumbHeight">@dimen/ksw_md_thumb_ripple_size</item>
+        <item name="kswBackColor">@color/ksw_md_back_color</item>
+        <item name="kswBackMeasureRatio">1.45</item>
+    </style>
+    <style name="SwitchButtonStyle">
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">4.0dip</item>
+    </style>
+    <style name="SwitchButtonStyleMD" parent="@style/SwitchButtonMD">
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">4.0dip</item>
+    </style>
+    <style name="filemanager_ShadowStyle">
+        <item name="android:shadowColor">#ff6e6e6e</item>
+        <item name="android:shadowDx">0.5</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+    <style name="filemanager_DeepStyle">
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">-0.5</item>
+        <item name="android:shadowDy">-0.5</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+    <style name="filemanager_OrangeStyle">
+        <item name="android:shadowColor">#ff742061</item>
+        <item name="android:shadowDx">-0.5</item>
+        <item name="android:shadowDy">-0.5</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+    <style name="filemanager_Dialog_Fullscreen">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="filemanager_GreenStyle">
+        <item name="android:shadowColor">#ff003300</item>
+        <item name="android:shadowDx">-0.5</item>
+        <item name="android:shadowDy">-0.5</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+    <style name="filemanager_HomeButtonStytle">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+    </style>
+    <style name="filemanager_FileViewToolbarButtonStytle">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="filemanager_FileViewOperationButtonStytle">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/filemanager_operation_button_background</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="filemanager_FileViewOperationMoveButtonStytle">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/filemanager_remote_button_bg</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+    <style name="filemanager_CategoryButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="filemanager_CategoryButtonIconStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">3.0px</item>
+    </style>
+    <style name="filemanager_CategoryButtonTextStyle">
+        <item name="android:textSize">19.0px</item>
+        <item name="android:textColor">#ff111111</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="filemanager_CategoryButtonCountTextStyle">
+        <item name="android:textSize">15.0px</item>
+        <item name="android:textColor">#ffa6a6a6</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="filemanager_InformationItemTitleStyle">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">@color/filemanager_gray</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_width">60.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="filemanager_InformationItemContentStyle">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+    </style>
+    <style name="filemanager_InformationItemStyle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="filemanager_InformationTextStyle">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ff222222</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">5.0dip</item>
+    </style>
+    <style name="filemanager_CategoryLegendStyle">
+        <item name="android:textSize">10.0dip</item>
+        <item name="android:textColor">#ff222222</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">2.0dip</item>
+        <item name="android:drawablePadding">5.0px</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="filemanager_CategoryLegendStyleLand">
+        <item name="android:textSize">10.0dip</item>
+        <item name="android:textColor">#ff222222</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:layout_marginLeft">2.0dip</item>
+        <item name="android:drawablePadding">5.0px</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="filemanager_InformationDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/filemanager_popup_bg</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="filemanager_ActionButton">
+        <item name="android:textAppearance">@style/filemanager_TextAppearance.ActionButton</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="filemanager_TextAppearance" parent="@android:style/TextAppearance" />
+    <style name="filemanager_TextAppearance.ActionButton" parent="@style/filemanager_TextAppearance">
+        <item name="android:textStyle">italic</item>
+    </style>
+    <style name="filemanager_BottomButton">
+        <item name="android:textAppearance">?android:textAppearanceSmallInverse</item>
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">#cc000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/filemanager_btn_bottom</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">#80ffffff</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">0.2</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="filemanager_BottomButton.Left" parent="@style/filemanager_BottomButton" />
+    <style name="filemanager_BottomButton.Right" parent="@style/filemanager_BottomButton">
+        <item name="android:background">@drawable/filemanager_btn_bottom_last</item>
+    </style>
+    <style name="filemanager_BottomButtonBar">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:background">@drawable/filemanager_bottom_button_bar</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="filemain_style" parent="@android:style/Theme.Material.Light">
+        <item name="android:actionBarStyle">@style/fimABStyle</item>
+        <item name="android:actionBarSize">40.0dip</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_back</item>
+    </style>
+    <style name="fimABStyle" parent="@android:style/Widget.ActionBar">
+        <item name="android:background">#ffef57ad</item>
+        <item name="android:titleTextStyle">@style/AcBar_titleStyle</item>
+    </style>
+    <style name="AcBar_titleStyle">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+</resources>

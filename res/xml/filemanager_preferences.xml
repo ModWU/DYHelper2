@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/filemanager_preference_title">
+        <EditTextPreference android:title="@string/filemanager_pref_primary_folder" android:key="pref_key_primary_folder" android:summary="@string/filemanager_pref_primary_folder_summary" android:defaultValue="@string/filemanager_default_primary_folder" />
+        <CheckBoxPreference android:title="@string/filemanager_pref_read_root" android:key="pref_key_read_root" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/filemanager_pref_show_real_path" android:key="pref_key_show_real_path" android:summary="@string/filemanager_pref_show_real_path_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

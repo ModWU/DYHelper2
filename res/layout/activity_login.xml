@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ff1cc991" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center|left" android:id="@id/settings_bar" android:layout_width="wrap_content" android:layout_height="54.0dip" android:text="@string/title_activity_login" android:layout_toRightOf="@id/login_back" />
+        <ImageView android:id="@id/login_back" android:padding="10.0dip" android:clickable="true" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:src="@mipmap/ic_back" android:layout_alignBottom="@id/settings_bar" android:onClick="loginBack" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/user_bg" android:layout_width="fill_parent" android:layout_height="150.0dip">
+        <dyhelper.com.view.RoundImageView android:id="@id/iv_uimage" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/user_image" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">l
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="16.0sp" android:id="@+id/btn_login_phone" android:background="@drawable/login_phone_icon" android:layout_width="250.0dip" android:layout_height="40.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <Button android:textSize="16.0sp" android:id="@+id/btn_login_weixin" android:background="@drawable/login_weixin_icon" android:layout_width="250.0dip" android:layout_height="40.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

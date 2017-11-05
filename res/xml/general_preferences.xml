@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:icon="@null"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="监视选项">
+        <CheckBoxPreference android:layout="@layout/preference_checkbox" android:title="监视系统通知" android:key="pref_watch_notification" android:summary="读取新消息通知中的红包提示并进入聊天页" android:defaultValue="true" />
+        <CheckBoxPreference android:layout="@layout/preference_checkbox" android:title="监视聊天列表" android:key="pref_watch_list" android:summary="读取聊天列表中的红包提示并进入聊天页" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="防封号选项">
+        <CheckBoxPreference android:layout="@layout/preference_checkbox" android:title="自动拆开红包" android:key="pref_watch_chat" android:defaultValue="false" />
+        <dyhelper.com.ui.SeekBarPreference android:layout="@layout/preference_checkbox" android:title="延时拆开红包" android:key="pref_open_delay" pref_kind="pref_open_delay" />
+        <CheckBoxPreference android:layout="@layout/preference_checkbox" android:title="拆开自己发的红包" android:key="pref_watch_self" android:defaultValue="true" />
+        <EditTextPreference android:layout="@layout/preference_checkbox" android:title="屏蔽红包文字" android:key="pref_watch_exclude_words" android:summary="@string/pref_watch_exclude_words_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

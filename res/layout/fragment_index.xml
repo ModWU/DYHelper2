@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="150.0dip">
+        <FrameLayout android:id="@id/id_brand_prent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v4.view.ViewPager android:id="@+id/vp_advertise" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="150.0dip" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/gv_brand_loading" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="正在加载图片中..." />
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/rounddot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" android:layout_alignParentBottom="true" />
+        <ImageButton android:id="@id/id_login" android:background="@drawable/user_login_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" />
+    </RelativeLayout>
+    <GridView android:id="@id/gv_brand" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="1.0px" android:verticalSpacing="1.0px" android:numColumns="3" />
+</LinearLayout>

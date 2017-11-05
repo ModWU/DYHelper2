@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="xyz.monkeytong.hongbao" 
+    android:versionCode="2"
+    android:versionName="2.0">
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    
+    
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera。flash"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    
+    
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+    
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="dyhelper.com.ui.XYZApplication" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="dyhelper.com.ui.GuidePageMain" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="dyhelper.com.ui.Main" android:screenOrientation="portrait" android:theme="@style/Base.Theme.AppCompat.Light"/>
+        <activity android:exported="true" android:name="xyz.monkeytong.hongbao.wxapi.WXEntryActivity" android:theme="@android:style/Theme.Translucent"/>
+        <!-- 手电筒 -->
+        <activity android:label="@string/app_name" android:name="dyhelper.com.ui.FlashlightMain" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <!-- end -->
+        <!-- 抢红包界面 -->
+        <activity android:label="@string/app_name" android:name="dyhelper.com.ui.SettingsActivity" android:screenOrientation="portrait" android:theme="@style/slide_style"/>
+        <activity android:label="@string/app_name" android:name="dyhelper.com.ui.HongbaoHistoryActivity" android:screenOrientation="portrait" android:theme="@style/Base.Theme.AppCompat.Light"/>
+        <activity android:label="@string/app_name" android:name="dyhelper.com.ui.HongbaoMain" android:screenOrientation="portrait" android:theme="@style/Base.Theme.AppCompat.Light"/>
+       <service android:name="dyhelper.com.services.HongbaoService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/accessible_service_config"/>
+        </service>
+       <!-- end -->
+       
+       <!-- 登录 -->
+       <activity android:label="@string/title_activity_login" android:name="dyhelper.com.ui.Login" android:screenOrientation="portrait" android:theme="@style/slide_style"/>
+       <!-- end -->
+       
+       <!-- 手机验证 -->
+       <activity android:label="@string/app_name" android:name="dyhelper.com.ui.PhoneVerification" android:screenOrientation="portrait"/>
+       <!-- end -->
+       
+       <!-- 用户中心 -->
+        <activity android:label="@string/title_activity_my_indent" android:name="dyhelper.com.ui.UserCenter" android:screenOrientation="portrait" android:theme="@style/slide_style"/>
+       <!-- end -->
+       
+       <!-- 程序卸载 -->
+       <activity android:label="@string/app_del_name" android:name="dyhelper.com.appsmanager.AppsMain"/>
+       <!-- end -->
+       
+       <!-- 广告点击webview -->
+       <activity android:name="cn.dianyou.advert.WebViewActivity" android:screenOrientation="portrait"/>
+       <!-- end -->
+       
+       <!-- 天气 -->
+       <activity android:name="dyhelper.com.weather.addcity" android:label="addcity"/>
+       <activity android:name="dyhelper.com.weather.WeatherMain" android:screenOrientation="portrait"/>
+       <service
+                android:name="com.baidu.location.f"
+                android:enabled="true"
+                android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+       <!-- end -->
+       
+       
+       <!-- 文件管理 -->
+       <meta-data android:name="BaiduMobAd_APP_ID" android:value="10046744"/>
+        <meta-data android:name="BaiduMobAd_APP_SEC" android:value="10046744"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.baidu.mobads.AppActivity"/>
+        <service android:exported="false" android:name="com.qq.e.comm.DownloadService"/>
+        <activity android:name="com.qq.e.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.qq.e.ads.InterstitialAdActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.qq.e.ads.GdtBrowserActivity"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:launchMode="singleTask" android:name="dyhelper.com.filemanager.explorer.FileManagerMain" android:screenOrientation="portrait" android:theme="@style/filemain_style" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="dyhelper.com.filemanager.explorer.SearchActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/filemanager_searchable"/>
+        </activity>
+        <activity android:label="@string/filemanager_menu_setting" android:launchMode="singleTop" android:name="dyhelper.com.filemanager.explorer.FileExplorerPreferenceActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Light.NoActionBar"/>
+        <meta-data android:name="android.app.default_searchable" android:value="dyhelper.com.filemanager.explorer.SearchActivity"/>
+        <service android:name="dyhelper.com.filemanager.explorer.FTPServerService"/>
+        <service android:name="com.lisga.deew.UHH"/>
+        <activity android:name="com.hhragrsfs.Dfge" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.hhragrsfs.Webd">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+       <!-- end -->
+       
+    </application>
+</manifest>

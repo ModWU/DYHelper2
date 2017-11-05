@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="抢红包记录" />
+    <View android:id="@id/first_line" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

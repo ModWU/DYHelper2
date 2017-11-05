@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@android:color/background_light" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_tools_tab" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@+id/iv_tools_tab" android:background="#00000000" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/tools_light" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/orange" android:id="@+id/tv_tools_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="工具" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_mail_tab" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@+id/iv_mail_tab" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/mail_dark" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@+id/tv_mail_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="夺宝" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_index_tab" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@+id/iv_index_tab" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/index_dark" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@+id/tv_index_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="首页" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_news_tab" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@+id/iv_news_tab" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/news_dark" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@+id/tv_news_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发现" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_application_tab" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@+id/iv_application_tab" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/application_dark" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@+id/tv_application_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应用" />
+    </LinearLayout>
+</LinearLayout>

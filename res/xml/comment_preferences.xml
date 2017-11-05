@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:icon="@null"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="自动回复(Android 5.0以上系统)">
+        <CheckBoxPreference android:layout="@layout/preference_checkbox" android:title="开启自动回复" android:key="pref_comment_switch" android:summary="在拆开其他人的红包后发送自动回复" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="回复选项">
+        <xyz.monkeytong.hongbao.activities.SeekBarPreference android:layout="@layout/preference_checkbox" android:title="延时发送回复" android:key="pref_comment_delay" pref_kind="pref_comment_delay" />
+        <CheckBoxPreference android:layout="@layout/preference_checkbox" android:title="\@发红包的人" android:key="pref_comment_at" android:defaultValue="false" />
+        <EditTextPreference android:layout="@layout/preference_checkbox" android:title="自定义回复内容" android:key="pref_comment_words" android:summary="@string/pref_comment_words_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

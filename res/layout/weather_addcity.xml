@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffdadada" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="50.0dip" android:weightSum="1.0" android:alpha="1.0">
+        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/textView11" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text=" 管理城市 " android:alpha="0.9" />
+        <Button android:textColor="#ff1bd1ff" android:layout_gravity="center|left" android:id="@id/buttonback" android:background="#ffffffff" android:layout_width="80.0dip" android:layout_height="fill_parent" android:text="返回" android:layout_weight="0.0" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="47.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <EditText android:textColor="#ff000000" android:id="@id/editText" android:background="@drawable/weather_editsharp" android:layout_width="wrap_content" android:layout_height="37.0dip" android:hint="输入城市" android:singleLine="true" android:layout_weight="0.99" />/>
+<Button android:textColor="#ffffffff" android:id="@id/button3" android:background="#ff1bd1ff" android:layout_width="60.0dip" android:layout_height="37.0dip" android:text="定位" android:singleLine="true" />
+        <Button android:textColor="#ffffffff" android:id="@id/button2" android:background="#ff1bd1ff" android:layout_width="60.0dip" android:layout_height="37.0dip" android:layout_marginLeft="2.0dip" android:text="添加" android:singleLine="true" />
+        <ImageView android:id="@id/imageView6" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="39.0dip">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="15.0dip" android:textColor="#ff000000" android:id="@id/textView12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" />
+        </LinearLayout>
+        <dyhelper.com.weather.SlideCutListView android:id="@id/slideCutListView" android:layout_width="fill_parent" android:layout_height="422.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@drawable/weather_friendactivity_comment_detail_list2" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:id="@id/textView20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="左右滑动删除" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

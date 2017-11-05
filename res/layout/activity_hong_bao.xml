@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#fff1f2de" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/hongbao_top_back" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="120.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/id_back" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/ic_back" />
+            <View android:layout_width="1.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <dyhelper.com.view.SwitchButton android:textColor="@color/primary_material_light" android:layout_gravity="center_vertical" android:id="@+id/id_autoOnOff" android:layout_width="30.0dip" android:layout_height="wrap_content" app:kswThumbDrawable="@drawable/hongbao_on" app:kswThumbMarginTop="-0.5dip" app:kswThumbMarginBottom="-0.5dip" app:kswThumbMarginLeft="-0.5dip" app:kswThumbMarginRight="-0.5dip" app:kswBackDrawable="@drawable/hongbao_onoff_back" app:kswBackMeasureRatio="0.0" app:kswAnimationDuration="150" app:kswTextOn="开" app:kswTextOff="关" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/primary_material_light" android:layout_gravity="center_vertical" android:id="@id/id_autoOnOffTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hongbao_auto_open" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <FrameLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/layout_control_accessibility" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="4.0">
+            <dyhelper.com.view.BitmapMeshLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/id_meshlay" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?android:attr/borderlessButtonStyle" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginRight="14dp">
+                <TextView android:textSize="14.0sp" android:textColor="#ffdb4c50" android:id="@+id/id_record" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hongbao_record_txt" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffdb4c50" android:id="@+id/id_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/hongbao_setting_txt" android:layout_centerVertical="true" android:layout_toRightOf="@id/id_record" />
+                <ImageButton android:id="@+id/id_how_to_use" android:background="@drawable/haobao_what" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <ImageView android:layout_gravity="center" android:id="@id/id_boot_circle" android:layout_width="190.0dip" android:layout_height="190.0dip" android:src="@drawable/hongbao_boot_circle" />
+            <Button android:layout_gravity="center" android:id="@+id/start_button" android:background="@drawable/hongbao_boot" android:layout_width="130.0dip" android:layout_height="130.0dip" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="8.0dip" android:layout_weight="2.0">
+            <TextView android:textSize="15.0sp" android:textColor="#ffdb4c50" android:gravity="center_horizontal" android:id="@id/word_below_start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="[为您抢到红包]" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:textSize="30.0sp" android:textColor="#ffdb4c50" android:id="@+id/qianghongbao_total_times" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ffdb4c50" android:id="@id/word1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="个，合计" />
+                    <TextView android:textSize="30.0sp" android:textColor="#ffdb4c50" android:id="@+id/qianghongbao_total_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ffdb4c50" android:id="@id/word2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="15.0sp" android:textColor="@color/primary_material_light" android:gravity="center" android:id="@+id/beat" android:background="@drawable/hongbao_beat_back" android:layout_width="220.0dip" android:layout_height="25.0dip" android:layout_marginTop="20.0dip" android:text="您的金额已超越 : 96%的用户" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

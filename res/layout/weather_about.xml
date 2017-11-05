@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff282e3a" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="bottom|center" android:orientation="horizontal" android:background="#ff282e3a" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_marginTop="40.0dip" android:layout_weight="0.25">
+        <ImageView android:layout_gravity="center" android:id="@id/imageView7" android:background="@drawable/weather_wicon" android:layout_width="160.0dip" android:layout_height="160.0dip" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_gravity="bottom|center" android:id="@id/textView13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="iWeather" android:singleLine="false" android:layout_weight="0.0" android:textIsSelectable="false" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:weightSum="1.0">
+        <ImageView android:id="@id/imageView8" android:background="@drawable/weather_logo1" android:layout_width="130.0dip" android:layout_height="130.0dip" android:layout_weight="0.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="84.0dip">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/textView14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Develop   DY" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/textView15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Design    DY" />
+    </LinearLayout>
+</LinearLayout>

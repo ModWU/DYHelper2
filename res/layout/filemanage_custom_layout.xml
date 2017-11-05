@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffef57ad" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center|left" android:id="@+id/id_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="文件管理" android:layout_toRightOf="@id/id_back" android:layout_centerVertical="true" />
+    <ImageView android:id="@+id/id_back" android:padding="10.0dip" android:clickable="true" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:src="@mipmap/ic_back" android:cropToPadding="false" android:layout_centerVertical="true" />
+</RelativeLayout>

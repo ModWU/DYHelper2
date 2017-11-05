@@ -1,0 +1,24 @@
+<resources>
+
+     <item type="dimen" name="disabled_alpha_material_light">0.26</item>
+    <item type="dimen" name="disabled_alpha_material_dark">0.3</item>
+    <item type="dimen" name="highlight_alpha_material_light">0.12</item>
+    <item type="dimen" name="highlight_alpha_material_dark">0.2</item>
+    <item type="dimen" name="highlight_alpha_material_colored">0.26</item>
+    <dimen name="notification_large_icon_width">64.0dip</dimen>
+    <dimen name="notification_large_icon_height">64.0dip</dimen>
+    <dimen name="notification_subtext_size">12.0dip</dimen>
+    <item type="dimen" name="abc_disabled_alpha_material_light">0.26</item>
+    <item type="dimen" name="abc_disabled_alpha_material_dark">0.3</item>
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="ksw_md_thumb_ripple_size">42.0dip</dimen>
+    <dimen name="ksw_md_thumb_solid_inset">11.0dip</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset">11.0dip</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset_top">11.0dip</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset_bottom">10.0dip</dimen>
+    <dimen name="ksw_md_thumb_solid_size">20.0dip</dimen>
+    <dimen name="ksw_md_thumb_shadow_size">21.0dip</dimen>
+    <dimen name="ksw_md_thumb_shadow_offset">2.0dip</dimen>
+
+</resources>

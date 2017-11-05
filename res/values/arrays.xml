@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="android_tools_name">
+        <item>抢红包</item>
+        <item>天气</item>
+        <item>夺宝</item>
+        <item>文件管理</item>
+        <item>程序卸载</item>
+        <item>发现</item>
+        <item>应用</item>
+        <item>手电筒</item>
+        <item>添加</item>
+    </string-array>
+    <array name="android_tools_images">
+        <item>@drawable/gv_tools_hongbao</item>
+        <item>@drawable/gv_tools_weather</item>
+        <item>@drawable/gv_tools_mail</item>
+        <item>@drawable/gv_tools_filesys</item>
+        <item>@drawable/gv_tools_appdel</item>
+        <item>@drawable/gv_tools_news</item>
+        <item>@drawable/gv_tools_application</item>
+        <item>@drawable/gv_tools_flashlight</item>
+        <item>@drawable/gv_tools_add</item>
+    </array>
+    <string-array name="android_tools_name2">
+        <item>抢红包</item>
+        <item>天气</item>
+        <item>手电筒</item>
+        <item>添加</item>
+    </string-array>
+    <array name="android_tools_images2">
+        <item>@drawable/gv_tools_hongbao</item>
+        <item>@drawable/gv_tools_weather</item>
+        <item>@drawable/gv_tools_flashlight</item>
+        <item>@drawable/gv_tools_add</item>
+    </array>
+    <array name="user_center_item_icons">
+        <item>@drawable/user_center_integralmail</item>
+        <item>@drawable/user_center_fee</item>
+    </array>
+    <string-array name="user_center_item_titles">
+        <item>积分商城</item>
+        <item>免费福利</item>
+    </string-array>
+</resources>

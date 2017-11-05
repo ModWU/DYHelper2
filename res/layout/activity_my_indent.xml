@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/btn_complete_yes" android:background="#ffe0620d" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="已完成订单" android:layout_weight="1.0" />
+        <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/btn_complete_no" android:background="@color/orange" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="未完成订单" android:layout_weight="1.0" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:id="@id/vp_myindent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>
